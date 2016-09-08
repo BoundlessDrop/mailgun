@@ -4,7 +4,7 @@ import net.sargue.mailgun.content.Body;
 import net.sargue.mailgun.content.Builder;
 
 import javax.ws.rs.core.Form;
-import java.util.Objects;
+//import java.util.Objects;
 
 /**
  * A mutable builder for a {@code Mail}. This allows the creation of a
@@ -261,8 +261,8 @@ public class MailBuilder {
     }
 
     private MailBuilder param(String name, String value) {
-        Objects.requireNonNull(name);
-        Objects.requireNonNull(value);
+        //Objects.requireNonNull(name);
+        //Objects.requireNonNull(value);
         form.param(name, value);
         return this;
     }
